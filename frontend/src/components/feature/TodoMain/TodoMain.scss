@@ -1,0 +1,111 @@
+.todo-main {
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 50px;
+    }
+
+    &__add {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+        align-items: center;
+        background-color: rgb(66, 66, 228);
+        color: white;
+        border-radius: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    &__filter {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        column-gap: 50px;
+        align-items: center;
+        background-color: rgb(66, 66, 228);
+        color: white;
+        border-radius: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 400;
+
+        .filter-tab {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 400;
+            padding: 10px 20px;
+            border-radius: 20px;
+
+            &:hover {
+                background-color: #1e90ff;
+                opacity: 0.5;
+            }
+        }
+
+        .active {
+            background-color: green;
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 50px;
+        
+        th {
+          background-color: #eee;
+        }
+        
+        .delete {
+            &:hover {
+                background-color: red;
+                cursor: pointer;
+            }
+        }
+
+        .complete {
+            &:hover {
+                background-color: green;
+                cursor: pointer;
+            }
+        }
+
+        .name {
+            &:hover {
+                background-color: #1e90ff;
+                cursor: pointer;
+                opacity: 0.5;
+            }
+        }
+
+        td {
+          padding: 8px;
+          border: 1px solid #ccc;
+            
+          &:nth-child(1) {
+            width: 5%;
+          }
+
+          &:nth-child(2) {
+            width: 75%;
+          }
+          
+          &:nth-child(3) {
+            width: 15%;
+          }
+          
+          &:nth-child(4) {
+            width: 5%;
+          }
+        }
+      }
+}
